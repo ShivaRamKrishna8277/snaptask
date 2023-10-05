@@ -1,0 +1,137 @@
+@media (max-width: 300px){
+    header{
+        display: none;
+    }
+    main{
+        display: none;
+    }
+    #small-screen{
+        display: block;
+        font-size: 10px;
+        margin: 49vh 40px;
+    }
+}
+@media (min-width: 300px) and (max-width: 360px){
+    #navbar{
+        padding: 10px 20px;
+    }
+    #navbar *,#navbar h1{
+        font-size: 10px;
+    }
+    main{
+        padding: 0 20px;
+    }
+    .heading h1{
+        font-size: 13px;
+        margin: 10px 0;
+    }
+    #row1,#row2{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    #r1-left, #r2-left,#r1-right, #r2-right{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .bal-row h4{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 575px){
+    #navbar{
+        padding: 10px 20px;
+    }
+    #nav-left h1{
+        font-size: 12px;
+    }
+    main{
+        padding: 0 20px;
+    }
+    .heading h1{
+        font-size: 15px;
+        margin: 0px 0;
+    }
+    #row1,#row2{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    #r1-left, #r2-left,#r1-right, #r2-right{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .bal-row h4{
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 767px){
+    #navbar{
+        padding: 12px 20px;
+    }
+    #navbar *,#navbar h1{
+        font-size: 15px;
+    }
+    main{
+        padding: 0 20px;
+    }
+    .heading h1{
+        font-size: 13px;
+        margin: 10px 0;
+    }
+    #row1,#row2{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    #r1-left, #r2-left,#r1-right, #r2-right{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .bal-row h4{
+        font-size: 14px;
+    }
+    #withdraw-btn{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px){
+    #navbar{
+        padding: 12px 20px;
+    }
+    #navbar *,#navbar h1{
+        font-size: 15px;
+    }
+    #lower-nav{
+        padding: 12px 20px;
+    }
+    main{
+        padding: 0 20px;
+    }
+    .heading h1{
+        font-size: 13px;
+        margin: 10px 0;
+    }
+    #row1,#row2{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    #r1-left, #r2-left,#r1-right, #r2-right{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .bal-row h4{
+        font-size: 14px;
+    }
+    #withdraw-btn{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1199px){
+    #lower-nav{
+        padding: 15px 40px;
+    }
+}

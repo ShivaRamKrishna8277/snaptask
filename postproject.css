@@ -1,0 +1,10 @@
+#lnav-right h4 a{
+    color: #2f3c7e;
+    border-bottom: 2px solid #2f3c7e;
+    cursor: pointer;
+}
+#allproj a,#yourproj a{
+    color: #ffffff7e;
+    cursor: pointer;
+    border-bottom: none;
+}

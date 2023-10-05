@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="dashboard-res.css">
+    <link rel="stylesheet" href="withdraw.css">
+    <link rel="stylesheet" href="withdraw-res.css">
+    <link rel="icon" href="images/web-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b08050b6d.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div id="nav-left">
+                <h1>Snap Tasks</h1>
+            </div>
+        </div>
+    </header>
+    <div id="small-screen">
+        <p>open in bigger screen for better experience</p>
+    </div>
+    <main>
+        <div id="heading">Withdraw</div>
+        <hr id="heading-line">
+        <div id="withdraw-container">
+            <div id="with-left">
+                <div id="funds-logo">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <h3>Funds</h3>
+                </div>
+                <p>Our withdrawal process typically takes 24 - 48 business hours for funds to credit to your account.</p>
+                <div id="amount-field">
+                    <input id="withdrawal-input" type="number" placeholder="Amount to withdraw (₹)" pattern="[0-9]" min="0" max="1000000">
+                    <button id="submit-btn">Submit</button>
+                </div>
+                <p id="status-message" style="display: none;"></p>                
+            </div>
+            <hr id="container-part">
+            <div id="with-right">
+                <li>
+                    <div class="bal-li">
+                        <h3>Total :</h3>
+                        <h3>4,684.84</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="bal-li">
+                        <h3>Pending :</h3>
+                        <h3>1,245.52</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="bal-li withdrawable">
+                        <h3>Withdrawable :</h3>
+                        <h3>3,439.32</h3>
+                    </div>
+                </li>
+            </div>
+        </div>
+        <div id="recent-container">
+            <div id="sub-heading">
+                <div id="recent-logo">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3>Recent Withdrawals</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-chevron-up" id="showicon"></i>
+            </div>
+            <table id="rect-trans-table" class="hidden">
+                <tr>
+                  <td>Date</td>
+                  <td>Status</td>
+                  <td>Amount requested</td>
+                </tr>
+                <tr>
+                  <td>2023-05-30</td>
+                  <td class="pending">PENDING</td>
+                  <td>2,513.00</td>
+                </tr>
+                <tr>
+                  <td>2023-05-30</td>
+                  <td class="cancled">CANCELLED</td>
+                  <td>2,513.00</td>
+                </tr>
+                <tr>
+                  <td>2023-05-30</td>
+                  <td class="cancled">CANCELLED</td>
+                  <td>2,513.00</td>
+                </tr>
+                <tr>
+                  <td>2023-01-05</td>
+                  <td class="processed">PROCESSED</td>
+                  <td>1,350.00</td>
+                </tr>
+              </table>
+        </div>
+    </main>
+    <footer>
+        <hr id="footer-hr">
+        <div id="upper-footer">
+            <h3>© 2023. All rights reserved.</h3>
+            <h3><a href="">Support</a></h3>
+        </div>
+        <div id="lower-footer">
+            <p>Disclaimer: Please note that while we strive to ensure a seamless and timely fund crediting process, there may be instances where delays or issues occur. If you experience any concerns or discrepancies regarding the crediting of funds, we kindly request you to contact our support team immediately. Our dedicated team will assist you in resolving any potential issues and ensuring a satisfactory resolution. Your satisfaction is our top priority, and we appreciate your cooperation in reaching out to us for any assistance needed.</p>
+        </div>
+    </footer>
+    <script src="withdraw.js"></script>
+</body>
+</html>

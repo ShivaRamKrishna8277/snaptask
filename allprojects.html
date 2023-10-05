@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="allprojects.css">
+    <link rel="stylesheet" href="allprojects-res.css">
+    <link rel="icon" href="images/web-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b08050b6d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="content-container">
+        <header>
+            <div id="navbar">
+                <div id="nav-left">
+                    <h1>Snap Tasks</h1>
+                </div>
+                <div id="nav-right">
+                    <ul>
+                        <li>
+                            <div id="search">
+                                <img src="images/Search.png" alt="">
+                                <input type="search" placeholder="Search Projects">
+                            </div>
+                        </li>
+                        <li>Dashboard</li>
+                        <li><a href="statistics.html">Statistics</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="lower-nav">
+                <div id="lnav-left">
+                    <h4 id="allproj"><a href="allprojects.html">All Projects</a></h4>
+                    <h4 id="yourproj"><a href="yourprojects.html">Your Projects</a></h4>
+                </div>
+                <div id="lnav-right">
+                    <h4 id="post-project"><a href="postproject.html">Post Projects</a></h4>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <main>
+            <div id="all-tables-container">
+                <div id="third-nav">
+                    <div id="page-info">
+                        <div id="tnav-left-login">
+                            <h2>Page-1 (01-03 of 03)</h2>
+                        </div>
+                        <div id="tnav-left-signup">
+                            <h2>Page-1 (0-0 of 0)</h2>
+                        </div>
+                    </div>
+                    <div id="tnav-right">
+                        <img src="images/Filter.png" alt="">
+                        <div class="custom-select">
+                            <div class="select-selected">Filter</div>
+                            <div class="select-items">
+                                <div>All</div>
+                                <div>UI / UX Designing</div>
+                                <div>Web Development</div>
+                                <div>App Development</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="table-container">
+                    <div id="projects-table-container">
+                        <table id="projects-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th>Reward</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="project-1">
+                                    <td>Praveen K</td>
+                                    <td>Food delivery application Ui Design</td>
+                                    <td>UI / UX Designing</td>
+                                    <td>₹1056.87</td>
+                                </tr>
+                                <tr id="project-2">
+                                    <td>Infotech Pvt Ltd</td>
+                                    <td>Ecommerce website login page Dev...</td>
+                                    <td>Web development</td>
+                                    <td>₹1805.62</td>
+                                </tr>
+                                <tr id="project-3">
+                                    <td>Inexor Industries</td>
+                                    <td>Website Requirment</td>
+                                    <td>web development</td>
+                                    <td>₹3405.07</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="nxt-page">
+                    <div class="previous page-nav">
+                        <h2><i class="fa-solid fa-chevron-left"></i> <span>Previous</span></h2>
+                    </div>
+                    <div class="current page-nav">
+                        <h2>1</h2>
+                        <h2>2</h2>
+                    </div>
+                    <div class="next page-nav">
+                        <h2><span>Next</span> <i class="fa-solid fa-chevron-right"></i></h2>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <footer>
+            <div class="footer">
+                <div id="footer-left">
+                    <ul>
+                        <li><a href="">Help</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div id="footer-right">
+                    <p>All rights reserved. © Snap Tasks.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

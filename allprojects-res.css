@@ -1,0 +1,594 @@
+@media (max-width: 360px){
+    /*navbar*/
+
+    #navbar{
+        padding: 10px 20px;
+        position: relative;
+    }
+    #nav-left h1{
+        font-size: 12px;
+    }
+    #search{
+        display: none;
+    }
+    #nav-right ul li{
+        margin-left: 25px;
+        font-size: 10px;
+    }
+
+    /*#lower-nav*/
+    #lower-nav{
+        padding: 10px 20px;
+        font-size: 8px;
+        font-weight: 100;
+    }
+    #lnav-left h4{
+        margin-right: 25px;  
+    }
+
+    /*#third-nav*/
+    #third-nav{
+        padding: 5px 20px 5px 23px;
+    }
+    #tnav-left-login h2,#tnav-left-signup h2{
+        font-size: 8px;
+    }
+    #tnav-right{
+        border-radius: 3px;
+        padding: 3px 5px;
+    }
+    #tnav-right img{
+        width: 8px;
+    }
+    .custom-select {
+        position: relative;
+        width: 100px;
+        font-size: 8px;
+    }
+    .select-items {
+        width: 110px;
+        font-size: 7px;
+    }  
+
+    /*table*/
+    #table-container{
+        padding: 10px 20px;
+    }
+    table thead th,table tbody td{
+        font-size: 8px;
+        padding: 5px 15px;
+        border: none;
+        flex-wrap: wrap;
+    }
+    table tbody td:first-child,table thead th:first-child{
+        display: block;
+    }
+    .add-img{
+        width: 14px;
+    }
+    .take-test{
+        padding: 5px 5px;
+        font-size: 8px;
+        font-weight: lighter;
+    }
+    #empty-img img{
+        width: 100px;
+    }
+    #empty-img h4{
+        font-size: 10px;
+    }
+
+    /*nav*/
+    .previous span,.next span{
+        display: none;
+    }
+    .page-nav *{
+        font-size: 10px;
+        padding: 0px;
+    }
+
+    /*footer*/
+    .footer{
+        padding: 10px 30px;
+        font-size: 9px;
+    }
+    #footer-right{
+        display: none;
+    }
+    #footer-left{
+        width: 100%;
+    }
+    #footer-left ul li{
+        margin-left: 0px;
+    }
+
+    /*post project*/
+    #post-project-container{
+        padding: 0px 20px;
+    }
+    .form-header-nav h3{
+        font-size: 14px;
+    }
+    .form-field{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .form-field input,.form-field textarea,.form-field select{
+        margin-bottom: 40px;
+        width: 95%;
+    }
+    .savesubmit{
+        width: fit-content;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 575px){
+    /*navbar*/
+    #navbar{
+        padding: 10px 20px;
+        position: relative;
+    }
+    #nav-left h1{
+        font-size: 12px;
+    }
+    #search{
+        position: absolute;
+        bottom: 7px;
+        right: 160px;
+        height: 20px;
+        width: fit-content;
+        width: 30%;
+    }
+    #search img{
+        width: 12px;
+    }
+    #search input{
+        width: 100%;
+        height: 15px;
+        font-size: 10px;
+    }
+    #nav-right ul li{
+        margin-left: 25px;
+        font-size: 10px;
+    }
+
+    /*#lower-nav*/
+    #lower-nav{
+        padding: 10px 20px;
+        font-size: 9px;
+        font-weight: 100;
+    }
+    #lnav-left h4{
+        margin-right: 25px;  
+    }
+
+    /*#third-nav*/
+    #third-nav{
+        padding: 10px 20px 5px 23px;
+    }
+    #tnav-left-login h2,#tnav-left-signup h2{
+        font-size: 9px;
+    }
+    #tnav-right{
+        border-radius: 3px;
+        padding: 4px 7px;
+    }
+    #tnav-right img{
+        width: 10px;
+    }
+    .custom-select {
+        position: relative;
+        width: 100px;
+        font-size: 10px;
+    }
+    .select-items {
+        width: 110px;
+        font-size: 10px;
+    }  
+
+    /*table*/
+    #table-container{
+        padding: 10px 20px;
+    }
+    table thead th,table tbody td{
+        font-size: 10px;
+        padding: 5px 15px;
+        border: none;
+    }
+    table tbody td:first-child,table thead th:first-child{
+        display: block;
+    }
+    .add-img{
+        width: 17px;
+    }
+    .take-test{
+        padding: 5px 5px;
+        font-size: 9px;
+        font-weight: lighter;
+    }
+    #empty-img img{
+        width: 130px;
+    }
+    #empty-img h4{
+        font-size: 11px;
+    }
+
+    /*nav*/
+    .previous span,.next span{
+        display: none;
+    }
+
+    /*footer*/
+    .footer{
+        padding: 10px 30px;
+        font-size: 10px;
+    }
+    #footer-right{
+        display: none;
+    }
+    #footer-left{
+        width: 100%;
+    }
+    #footer-left ul li{
+        margin-left: 0px;
+    }
+
+    /*post project*/
+    #post-project-container{
+        padding: 0px 20px;
+    }
+    .form-header-nav h3{
+        font-size: 14px;
+    }
+    .form-field{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .form-field input,.form-field textarea,.form-field select{
+        margin-bottom: 40px;
+        width: 95%;
+    }
+    .savesubmit{
+        width: fit-content;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 767px){
+    /*navbar*/
+    #navbar{
+        padding: 10px 20px;
+        position: relative;
+    }
+    #nav-left h1{
+        font-size: 14px;
+    }
+    #search{
+        position: absolute;
+        bottom: 7px;
+        right: 200px;
+        height: 20px;
+        width: 30%;
+        max-width: 200px;
+    }
+    #search img{
+        width: 12px;
+    }
+    #search input{
+        width: 100%;
+        height: 15px;
+        font-size: 10px;
+    }
+    #nav-right ul li{
+        margin-left: 35px;
+        font-size: 12px;
+    }
+    /*#lower-nav*/
+    #lower-nav{
+        padding: 10px 20px;
+        font-size: 10px;
+        font-weight: 100;
+    }
+    #lnav-left h4{
+        margin-right: 35px;  
+    }
+
+    /*#third-nav*/
+    #third-nav{
+        padding: 10px 20px 5px 23px;
+    }
+    #tnav-left-login h2,#tnav-left-signup h2{
+        font-size: 11px;
+    }
+    #tnav-right{
+        border-radius: 3px;
+        padding: 4px 7px;
+    }
+    #tnav-right img{
+        width: 12px;
+    }
+    .custom-select {
+        position: relative;
+        width: 130px;
+        font-size: 11px;
+    }
+    .select-items {
+        width: 130px;
+        font-size: 11px;
+    } 
+
+    /*table*/
+    #table-container{
+        padding: 10px 20px;
+    }
+    table thead th,table tbody td{
+        font-size: 11px;
+        padding: 5px 15px;
+        border: none;
+    }
+    .add-img{
+        width: 20px;
+    }
+    .take-test{
+        padding: 5px 5px;
+        font-size: 10px;
+        font-weight: lighter;
+    }
+    #empty-img img{
+        width: 150px;
+    }
+    #empty-img h4{
+        font-size: 13px;
+    }
+    /*footer*/
+    .footer{
+        padding: 10px 50px;
+        font-size: 10px;
+      }
+      #footer-right{
+        display: none;
+      }
+      #footer-left{
+        width: 100%;
+      }
+      #footer-left ul li{
+        margin-left: 0px;
+      }
+
+    /*post project*/
+    #post-project-container{
+        padding: 0px 20px;
+    }
+    .form-header-nav h3{
+        font-size: 14px;
+    }
+    .form-field{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .form-field input,.form-field textarea,.form-field select{
+        margin-bottom: 40px;
+        width: 95%;
+    }
+    .savesubmit{
+        width: fit-content;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px){
+    /*navbar*/
+    #navbar{
+        padding: 15px 20px;
+        position: relative;
+    }
+    #nav-left h1{
+        font-size: 15px;
+    }
+    #search{
+        position: absolute;
+        bottom: 14px;
+        right: 200px;
+        height: 20px;
+        width: 30%;
+        max-width: 200px;
+    }
+    #search img{
+        width: 14px;
+    }
+    #search input{
+        width: 100%;
+        height: 15px;
+        font-size: 13px;
+    }
+    #nav-right ul li{
+        margin-left: 35px;
+        font-size: 13px;
+    }
+    /*#lower-nav*/
+    #lower-nav{
+        padding: 15px 20px;
+        font-size: 11px;
+        font-weight: 100;
+    }
+    #lnav-left h4{
+        margin-right: 45px;  
+    }
+
+    /*#third-nav*/
+    #third-nav{
+        padding: 10px 20px 5px 23px;
+    }
+    #tnav-left-login h2,#tnav-left-signup h2{
+        font-size: 12px;
+    }
+    #tnav-right{
+        border-radius: 5px;
+        padding: 5px 9px;
+    }
+    #tnav-right img{
+        width: 13px;
+    }
+    .custom-select {
+        position: relative;
+        width: 150px;
+        font-size: 12px;
+    }
+    .select-items {
+        width: 140px;
+        font-size: 12px;
+    } 
+
+    /*table*/
+    #table-container{
+        padding: 15px 20px;
+    }
+    table thead th,table tbody td{
+        font-size: 12px;
+        padding: 5px 15px;
+        border: none;
+    }
+    .add-img{
+        width: 20px;
+    }
+    .take-test{
+        padding: 5px 5px;
+        font-size: 10px;
+        font-weight: lighter;
+    }
+    #empty-img img{
+        width: 150px;
+    }
+    #empty-img h4{
+        font-size: 14px;
+    }
+    /*footer*/
+    .footer{
+        padding: 10px 20px 10px 0px;
+        font-size: 10px;
+    }
+    #footer-left ul li{
+        margin-right: 20px;
+    }
+
+    /*post project*/
+    #post-project-container{
+        padding: 0px 20px;
+    }
+    .form-header-nav h3{
+        font-size: 14px;
+    }
+    .form-field{
+        margin-bottom: 0px;
+    }
+    .form-field input,.form-field textarea,.form-field select{
+        margin-bottom: 40px;
+        width: 95%;
+    }
+    .savesubmit{
+        width: fit-content;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1199px){
+    /*navbar*/
+    #navbar{
+        padding: 15px 20px;
+        position: relative;
+    }
+    #nav-left h1{
+        font-size: 16px;
+    }
+    #search{
+        position: absolute;
+        bottom: 15px;
+        right: 215px;
+        height: 20px;
+        width: 30%;
+        max-width: 200px;
+    }
+    #search img{
+        width: 15px;
+    }
+    #search input{
+        width: 100%;
+        height: 15px;
+        font-size: 13px;
+    }
+    #nav-right ul li{
+        margin-left: 35px;
+        font-size: 14px;
+    }
+    /*#lower-nav*/
+    #lower-nav{
+        padding: 15px 20px;
+        font-size: 12px;
+        font-weight: 100;
+    }
+    #lnav-left h4{
+        margin-right: 35px;  
+    }
+
+    /*#third-nav*/
+    #third-nav{
+        padding: 10px 20px 5px 23px;
+    }
+    #tnav-left-login h2,#tnav-left-signup h2{
+        font-size: 13px;
+    }
+    #tnav-right{
+        border-radius: 3px;
+        padding: 5px 10px;
+    }
+    #tnav-right img{
+        width: 14px;
+    }
+    .custom-select {
+        position: relative;
+        width: 180px;
+        font-size: 14px;
+    }
+    .select-items {
+        width: 140px;
+        font-size: 13px;
+    } 
+
+    /*table*/
+    #table-container{
+        padding: 15px 20px;
+    }
+    table thead th,table tbody td{
+        font-size: 12px;
+        padding: 5px 15px;
+        border: none;
+    }
+    .add-img{
+        width: 22px;
+    }
+    .take-test{
+        padding: 5px 0px;
+        font-size: 14px;
+        font-weight: lighter;
+    }
+
+    /*post project*/
+    #post-project-container{
+        padding: 0px 20px;
+    }
+    .form-header-nav h3{
+        font-size: 14px;
+    }
+    .form-field{
+        margin-bottom: 0px;
+    }
+    .form-field input,.form-field textarea,.form-field select{
+        margin-bottom: 40px;
+        width: 95%;
+    }
+    .savesubmit{
+        width: fit-content;
+        font-size: 11px;
+    }
+}

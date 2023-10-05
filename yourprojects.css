@@ -1,0 +1,13 @@
+#nxt-page{
+    display: none;
+}
+
+#lnav-left h4:nth-child(2) a{
+    color: #2f3c7e;
+    border-bottom: 2px solid #2f3c7e;
+}
+#lnav-left h4:nth-child(1) a,#lnav-right h4 a{
+    color: #0000007e;
+    cursor: pointer;
+    border-bottom: none;
+}

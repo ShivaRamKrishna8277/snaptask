@@ -1,0 +1,311 @@
+@media (max-width: 360px) {
+  #hiw-img{
+    background-image: url(images/HIW-mini.png);
+    width: 70%;
+    height: 200px;
+  }
+}
+/* Extra small devices (e.g., smartphones) */
+@media (max-width: 575px) {
+  .navbar{
+    padding: 10px 40px 10px 20px;
+  }
+  #nav-logo {
+    width: 15px;
+  }
+  #logo span{
+    font-size: 13px;
+  }
+  #navlinks ul li {
+    margin-left: 30px;
+    font-size: 12px;
+  }
+  .banner{
+    padding: 80px 0 0 20px;
+  }
+  .banner h1{
+    font-size: 30px;
+    line-height: 55px;
+  }
+  #getstarted{
+    padding: 2px 7px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  #getstarted h5{
+    font-size: 9px;
+    font-weight: 100;
+  }
+  .aboutus,.howitwrk,.benefits{
+    padding: 20px 30px 20px 20px;
+  }
+  .heading{
+    font-size: 22px;
+  }
+  .aboutus p,.howitwrk p{
+    font-size: 10px;
+    line-height: 18px;
+  }
+  #hiw-img-container{
+    margin: 10px 0 0 0;
+  }
+  #hiw-img{
+    width: 100%;
+  }
+  #slide-container{
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  .slides{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .slide-header{
+    margin-bottom: 10px;
+  }
+  .slide-header img{
+    width: 30px;
+  }
+  .slide-header h3{
+    font-size: 16px;
+  }
+  .slide-content p{
+    font-size: 13px;
+    margin-left: 5px;
+    line-height: 23px;
+  }
+  .footer{
+    padding: 10px 30px;
+    font-size: 13px;
+  }
+  #footer-right{
+    display: none;
+  }
+  #footer-left{
+    width: 100%;
+  }
+  #footer-left ul li{
+    margin-left: 0px;
+  }
+}
+/* Small devices (e.g., smartphones) */
+@media (min-width: 575px) and (max-width: 767px) {
+  .navbar{
+    padding: 10px 40px 10px 30px;
+  }
+  #nav-logo {
+    width: 20px;
+  }
+  #logo span{
+    font-size: 15px;
+  }
+  #navlinks ul li {
+    margin-left: 30px;
+    font-size: 13px;
+  }
+  .banner{
+    padding: 80px 0 0 30px;
+  }
+  .banner h1{
+    font-size: 40px;
+    line-height: 55px;
+  }
+  #getstarted{
+    padding: 4px 9px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  #getstarted h5{
+    font-size: 12px;
+    font-weight: 100;
+  }
+  .aboutus,.howitwrk,.benefits{
+    padding: 20px 30px 20px 40px;
+  }
+  .heading{
+    font-size: 24px;
+  }
+  .aboutus p,.howitwrk p{
+    font-size: 11px;
+    line-height: 18px;
+  }
+  #hiw-img-container{
+    margin: -20px 0 0 0;
+  }
+  #slide-container{
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  .slides{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .slide-header{
+    margin-bottom: 10px;
+  }
+  .slide-header img{
+    width: 30px;
+  }
+  .slide-header h3{
+    font-size: 16px;
+  }
+  .slide-content p{
+    font-size: 13px;
+    margin-left: 5px;
+    line-height: 23px;
+  }
+  .footer{
+    padding: 10px 50px;
+    font-size: 13px;
+  }
+  #footer-right{
+    display: none;
+  }
+  #footer-left{
+    width: 100%;
+  }
+  #footer-left ul li{
+    margin-left: 0px;
+  }
+}
+
+/* Medium devices (e.g., tablets) */
+@media (min-width: 767px) and (max-width: 991px) {
+  .navbar{
+    padding: 10px 40px 10px 30px;
+  }
+  #nav-logo {
+    width: 20px;
+  }
+  #logo span{
+    font-size: 18px;
+  }
+  #navlinks ul li {
+    margin-left: 30px;
+    font-size: 13px;
+  }
+  .banner{
+    padding: 80px 0 0 30px;
+  }
+  .banner h1{
+    font-size: 45px;
+    line-height: 65px;
+  }
+  #getstarted{
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+  #getstarted h5{
+    font-size: 13px;
+    font-weight: 100;
+  }
+  .aboutus,.howitwrk,.benefits{
+    padding: 30px 30px 30px 40px;
+  }
+  .heading{
+    font-size: 24px;
+  }
+  .aboutus p,.howitwrk p{
+    font-size: 12px;
+    line-height: 18px;
+  }
+  #hiw-img-container{
+    margin: 10px 0 0 0;
+  }
+  #slide-container{
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  .slides{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .slide-header{
+    margin-bottom: 10px;
+  }
+  .slide-header img{
+    width: 30px;
+  }
+  .slide-header h3{
+    font-size: 16px;
+  }
+  .slide-content p{
+    font-size: 13px;
+    margin-left: 5px;
+    line-height: 23px;
+  }
+  .footer{
+    padding: 10px 20px 10px 0px;
+    font-size: 13px;
+  }
+  #footer-left ul li{
+    margin-right: 20px;
+  }
+}
+
+/* Large devices (e.g., desktops and laptops) */
+@media (min-width: 991px) and (max-width: 1199px) {
+  .navbar{
+    padding: 13px 40px;
+  }
+  #nav-logo {
+    width: 25px;
+  }
+  #logo span{
+    font-size: 16px;
+  }
+  #navlinks ul li {
+    margin-left: 50px;
+    font-size: 13px;
+  }
+  .banner{
+    padding: 60px 0 0 40px;
+  }
+  .banner h1{
+    font-size: 50px;
+    line-height: 70px;
+  }
+  #getstarted{
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+  #getstarted h5{
+    font-size: 12px;
+    font-weight: 100;
+  }
+  .aboutus,.howitwrk,.benefits{
+    padding: 30px 30px 30px 40px;
+  }
+  .heading{
+    font-size: 24px;
+  }
+  .aboutus p,.howitwrk p{
+    font-size: 12px;
+    line-height: 18px;
+  }
+  #slide-container{
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  .slides{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .slide-header{
+    margin-bottom: 10px;
+  }
+  .slide-header img{
+    width: 30px;
+  }
+  .slide-header h3{
+    font-size: 16px;
+  }
+  .slide-content p{
+    font-size: 13px;
+    margin-left: 5px;
+    line-height: 23px;
+  }
+}
+

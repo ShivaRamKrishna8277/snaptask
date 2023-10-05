@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="dashboard-res.css">
+    <link rel="stylesheet" href="statistics.css">
+    <link rel="stylesheet" href="statistics-res.css">
+    <link rel="icon" href="images/web-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b08050b6d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div id="nav-left">
+                <h1>Snap Tasks</h1>
+            </div>
+            <div id="nav-right">
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li>Statistics</li>
+                </ul>
+            </div>
+        </div>
+        <div id="lower-nav">
+            <div id="lnav-left">
+                <h4 id="overview" onclick="showoverview()">Overview</h4>
+                <h4 id="earnings" onclick="showearnings()">Earnings</h4>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <div id="small-screen">
+        <h1>Open in bigger screen for better experience</h1>
+    </div>
+    <main>
+        <div id="overview-container">
+            <div class="heading">
+                <h1>Overview</h1>
+            </div>
+            <div id="row1">
+                <div id="r1-left">
+                    <h5>Monthly Overview <span>(last 5 Months)</span></h5>
+                    <table id="m-stats-table">
+                        <thead>
+                            <tr>
+                                <th>Month</th>
+                                <th>Submitted</th>
+                                <th>Aproved</th>
+                                <th>Rejected</th>
+                                <th>Reward</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>April</td>
+                                <td>28</td>
+                                <td>16</td>
+                                <td>10</td>
+                                <td>5362.26</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td>43</td>
+                                <td>31</td>
+                                <td>12</td>
+                                <td>9982.26</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td>53</td>
+                                <td>48</td>
+                                <td>5</td>
+                                <td>12356.25</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>38</td>
+                                <td>25</td>
+                                <td>13</td>
+                                <td>6897.25</td>
+                            </tr>
+                            <tr>
+                                <td>December</td>
+                                <td>62</td>
+                                <td>50</td>
+                                <td>12</td>
+                                <td>16595.26</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="r1-right">
+                    <h5>Wallet</h5>
+                    <div id="balance">
+                        <div id="bal-nav">
+                            <h4>Available Balance</h4>
+                        </div>
+                        <div id="bal-container">
+                            <ul>
+                                <li class="bal-row upr-balnce">
+                                    <div id="li-left">
+                                        <h4>Balance:</h4>
+                                    </div>
+                                    <div id="li-right">
+                                        <h4>12384.84</h4>
+                                    </div>
+                                </li>
+                                <hr>
+                                <li class="bal-row upr-balnce">
+                                    <div id="li-left">
+                                        <h4>Bonus:</h4>
+                                    </div>
+                                    <div id="li-right">
+                                        <h4>1384.84</h4>
+                                    </div>
+                                </li>
+                                <hr>
+                                <li class="bal-row upr-balnce">
+                                    <div id="li-left">
+                                        <h4>Withdrawn:</h4>
+                                    </div>
+                                    <div id="li-right">
+                                        <h4>9084.84</h4>
+                                    </div>
+                                </li>
+                                <hr>
+                                <li class="bal-row available">
+                                    <div id="li-left">
+                                        <h4>Available:</h4>
+                                    </div>
+                                    <div id="li-right">
+                                        <h4>4684.84</h4>
+                                    </div>
+                                </li>
+                                <li id="withdraw-container">
+                                    <div id="withdraw-btn">
+                                        <h4><a href="withdraw.html" target="_blank">Withdraw</a></h4>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="row2">
+                <div id="r2-left">
+                    <h5>Sectorial Overview</h5>
+                    <table id="s-stats-table">
+                        <thead>
+                            <tr>
+                                <th>Sector</th>
+                                <th>Submitted</th>
+                                <th>Aproved</th>
+                                <th>Rejected</th>
+                                <th>Reward</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>UI/UX Designing</td>
+                                <td>28</td>
+                                <td>16</td>
+                                <td>10</td>
+                                <td>5362.26</td>
+                            </tr>
+                            <tr>
+                                <td>Web Development</td>
+                                <td>43</td>
+                                <td>31</td>
+                                <td>12</td>
+                                <td>9982.26</td>
+                            </tr>
+                            <tr>
+                                <td>App Development</td>
+                                <td>53</td>
+                                <td>48</td>
+                                <td>5</td>
+                                <td>12356.25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="r2-right">
+                    <h5>Overall Stats</h5>
+                    <div id="o-stats">
+                        <div id="o-stats-nav">
+                            <h4>Stastics</h4>
+                        </div>
+                        <div id="o-stats-container">
+                            <ul>
+                                <li class="bal-row upr-balnce">
+                                    <div id="li-left">
+                                        <h4>Balance:</h4>
+                                    </div>
+                                    <div id="li-right">
+                                        <h4>12384.84</h4>
+                                    </div>
+                                </li>
+                                <hr>
+                                <li class="bal-row upr-balnce">
+                                    <div id="li-left">
+                                        <h4>Bonus:</h4>
+                                    </div>
+                                    <div id="li-right">
+                                        <h4>1384.84</h4>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="earnings-container">
+            <div class="heading">
+                <h1>Earnings</h1>
+            </div>
+            <div id="earnings-container-chart" style="width: 100%; height: 60vh; cursor: pointer;">
+                <h3 class="sub-heading">Earning Chart ( last 6 months )</h3>
+                <canvas id="earnings-chart"></canvas>
+            </div>
+            <div id="earnings-container-table">
+                <h3 class="sub-heading">Recent Earnings</h3>
+                <div id="earnings-table-container">
+                    <table id="projects-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th>Reward</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Praveen K</td>
+                                <td>Food delivery application Ui Design</td>
+                                <td>UI / UX Designing</td>
+                                <td>₹1056.87</td>
+                            </tr>
+                            <tr>
+                                <td>Infotech Pvt Ltd</td>
+                                <td>Ecommerce website login page Dev...</td>
+                                <td>Web development</td>
+                                <td>₹1805.62</td>
+                            </tr>
+                            <tr>
+                                <td>Inexor Industries</td>
+                                <td>Website Requirment</td>
+                                <td>web development</td>
+                                <td>₹3405.07</td>
+                            </tr>
+                            <tr>
+                                <td>Infotech Pvt Ltd</td>
+                                <td>Ecommerce website Signup page Dev...</td>
+                                <td>Web development</td>
+                                <td>₹2005.62</td>
+                            </tr>
+                            <tr>
+                                <td>Naveen</td>
+                                <td>Weather Report Applicaion</td>
+                                <td>UI / UX Designing</td>
+                                <td>₹852.87</td>
+                            </tr>
+                            <tr>
+                                <td>Company Pvt Ltd</td>
+                                <td>News Application</td>
+                                <td>App development</td>
+                                <td>₹3842.00</td>
+                            </tr>
+                            <tr>
+                                <td>Infotech Pvt Ltd</td>
+                                <td>Ecommerce website Signup page Dev...</td>
+                                <td>Web development</td>
+                                <td>₹2005.62</td>
+                            </tr>
+                            <tr>
+                                <td>Kumari</td>
+                                <td>Music Applicaion</td>
+                                <td>UI / UX Designing</td>
+                                <td>₹1580.87</td>
+                            </tr>
+                            <tr>
+                                <td>Infotech Pvt Ltd</td>
+                                <td>Ecommerce website Signup page Dev...</td>
+                                <td>Web development</td>
+                                <td>₹2005.62</td>
+                            </tr>
+                            <tr>
+                                <td>Government</td>
+                                <td>Bill Payment application</td>
+                                <td>UI / UX Designing</td>
+                                <td>₹1256.87</td>
+                            </tr>
+                            <tr>
+                                <td>Praveen K</td>
+                                <td>Food delivery application Ui Design</td>
+                                <td>UI / UX Designing</td>
+                                <td>₹1056.87</td>
+                            </tr>
+                            <tr>
+                                <td>Praveen K</td>
+                                <td>Food delivery application Ui Design</td>
+                                <td>UI / UX Designing</td>
+                                <td>₹1056.87</td>
+                            </tr>
+                        </tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="nxt-page">
+                <div class="previous page-nav">
+                    <h2><i class="fa-solid fa-chevron-left"></i> <span>Previous</span></h2>
+                </div>
+                <div class="current page-nav">
+                    <h2>1</h2>
+                    <h2>2</h2>
+                </div>
+                <div class="next page-nav">
+                    <h2><span>Next</span> <i class="fa-solid fa-chevron-right"></i></h2>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footer">
+            <div id="footer-left">
+                <ul>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div id="footer-right">
+                <p>All rights reserved. © Snap Tasks.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="statistics.js"></script>
+</body>
+</html>

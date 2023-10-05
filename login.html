@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login-res.css">
+    <link rel="icon" href="images/web-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div id="logo">
+            <img src="images/web-logo.png" alt="" id="nav-logo">
+            <span>Snap Tasks</span>
+        </div>
+        <div id="navlinks">
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div id="left-div">
+            <div class="heading">
+                <div id="login-heading">
+                    <h3>Welcome Back</h3>
+                    <p>Welcome Please enter the details</p>
+                </div>
+                <div id="signup-heading">
+                    <h3>Create Account</h3>
+                    <p>lets's begin from here</p>
+                </div>
+            </div>
+            <div class="toggle-btn">
+                <div id="login-btn" onclick="login_click()">
+                    <h5>Sign in</h5>
+                </div>
+                <div id="sign-btn" onclick="signup_click()">
+                    <h5>Sign Up</h5>
+                </div>
+            </div>
+            <div class="info-form">
+                <div id="login-form-container">
+                    <form action="" id="login-form">
+                        <input type="email" placeholder="Email"><br>
+                        <input type="password" name="password" id="password" placeholder="Password"><br><br>
+                        <a href="dashboard.html"><h3 class="dash-link">Login</h3></a>
+                    </form>
+                </div>
+                <div id="signup-form-container">
+                    <form action="" id="signup-form">
+                        <input type="text" placeholder="Name"><br>
+                        <input type="email" placeholder="Email"><br>
+                        <input type="password" name="password" id="password" placeholder="Password"><br><br>
+                        <a href="dashboard.html"><h3 class="dash-link">Signup</h3></a>
+                    </form>
+                </div>
+            </div>
+            <hr id="seperaion-line"> 
+            <div class="other-options">
+                <p>or continue with</p>
+                <ul>
+                    <li><img src="images/Google.png" alt=""></li>
+                    <li><img src="images/Facebook.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div id="right-div">
+            <img src="images/6310507.jpg" alt="" id="signup-img">
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

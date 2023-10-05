@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Project</title>
+    <link rel="stylesheet" href="allprojects.css">
+    <link rel="stylesheet" href="allprojects-res.css">
+    <link rel="stylesheet" href="postproject.css">
+    <link rel="icon" href="images/web-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b08050b6d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+            <div id="nav-left">
+                <h1>Snap Tasks</h1>
+            </div>
+            <div id="nav-right">
+                <ul>
+                    <li>Dashboard</li>
+                    <li><a href="statistics.html">Statistics</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="lower-nav">
+            <div id="lnav-left">
+                <h4 id="allproj"><a href="allprojects.html">All Projects</a></h4>
+                <h4 id="yourproj"><a href="yourprojects.html">Your Projects</a></h4>
+            </div>
+            <div id="lnav-right">
+                <h4 id="post-project"><a href="postproject.html">Post Projects</a></h4>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <div id="post-project-container">
+            <div id="personal-form" class="forms">
+                <div class="form-header-nav" onclick="togglepersonalForm()">
+                    <h3>Personal Information</h3>
+                </div>
+                <div id="personal-info-form">
+                    <div class="type-container">
+                        <h3 id="individual" onclick="showindividual()">Individual</h3>
+                        <h3 id="business" onclick="showbusiness()">Business</h3>
+                    </div>
+                    <div class="form-content" id="individual-form">
+                        <div class="form-field">
+                            <input type="text" id="first-name" name="first-name" placeholder="First Name">
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+                        </div>
+                        <div class="form-field">
+                            <input type="email" id="email-individual" name="email-individual" placeholder="Email">
+                            <input type="tel" id="mobile-number" name="mobile-number" placeholder="Mobile Number">
+                        </div>
+                        <div class="savesubmit">
+                            Save and Continue
+                        </div>
+                    </div>
+                    <div class="form-content" id="business-form" style="display: none;">
+                        <div class="form-field">
+                            <input type="text" id="full-name" name="full-name" placeholder="Full Name">
+                            <input type="email" id="email-business" name="email-business" placeholder="Email">
+                        </div>
+                        <div class="form-field">
+                            <input type="tel" id="mobile-number" name="mobile-number" placeholder="Mobile Number">
+                            <textarea name="address" id="address" cols="30" rows="3"
+                                placeholder="Address"></textarea>
+                        </div>
+                        <div class="savesubmit">
+                            Save and continue
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="project-form" class="forms">
+                <div class="form-header-nav" onclick="togglepersonalForm()">
+                    <h3>Project Information</h3>
+                </div>
+                <div id="project-info-form">
+                    <div class="form-content">
+                        <div class="form-field">
+                            <input type="text" id="project-title" name="roject-title" placeholder="Project Title">
+                            <select name="category" id="category">
+                                <option value="uiux">UI/UX Designing</option>
+                                <option value="webdev">Web Development</option>
+                                <option value="appdev">App Development</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <input type="date" id="date-input" placeholder="Select a date">
+                            <input type="number" id="budget" name="number" placeholder="Project Budget ( ₹ )">
+                        </div>
+                        <div class="form-field">
+                            <input type="file" name="reference" id="reference" multiple>
+                            <textarea name="description" id="description" cols="30" rows="3" placeholder="Project Description"></textarea>
+                        </div>
+                        <div class="savesubmit">
+                            Save and Submit
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
